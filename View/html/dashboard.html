@@ -1,0 +1,21 @@
+<div class="wrap wp-ai-wrap">
+    <h1>WordPress AI Test</h1>
+    
+    <form id="wp-ai-form">
+        <p>
+            <label for="ai-query-select">Vyber data pro AI (volitelne):</label><br>
+            <select id="ai-query-select">
+                {{QUERY_OPTIONS}}
+            </select>
+        </p>
+
+        <p>
+            <label for="ai-prompt">Tvuj dotaz pro AI:</label><br>
+            <textarea id="ai-prompt" rows="5"></textarea>
+        </p>
+        
+        <button type="submit" class="button button-primary">Odeslat do Google AI Studio</button>
+    </form>
+
+    <div id="ai-response" style="display: none;"></div>
+</div>

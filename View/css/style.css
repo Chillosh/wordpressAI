@@ -1,0 +1,18 @@
+.wp-ai-wrap #wp-ai-form {
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.wp-ai-wrap select, 
+.wp-ai-wrap textarea {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.wp-ai-wrap #ai-response {
+    margin-top: 20px; 
+    padding: 15px; 
+    background: #fff; 
+    border: 1px solid #ccd0d4; 
+    min-height: 100px;
+}
