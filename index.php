@@ -22,9 +22,12 @@ define('PLUGIN_DIR', plugin_dir_path(__FILE__));
 
 require_once PLUGIN_DIR . 'includes/queries.php';
 require_once PLUGIN_DIR . 'Model/AiModel.php';
+require_once PLUGIN_DIR . 'Controller/RenderController.php';
 require_once PLUGIN_DIR . 'Controller/DashboardController.php';
 require_once PLUGIN_DIR . 'Controller/SenderController.php';
 
 $ai_model = new AiModel();
-new DashboardController($ai_model);
+$render_controller = new RenderController($ai_model);
+
+new DashboardController($ai_model, $render_controller);
 new SenderController($ai_model);
