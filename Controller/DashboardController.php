@@ -35,7 +35,11 @@ class DashboardController {
         
         $html = file_get_contents(PLUGIN_DIR . 'View/html/dashboard.html');
         $html = str_replace('{{QUERY_OPTIONS}}', $options_html, $html);
+
+        $nav_html = file_get_contents(PLUGIN_DIR . 'View/html/nav.html');
+        $html = str_replace('{{NAVIGATION}}', $nav_html, $html);
         
-        echo $html;
     }
+
+    
 }

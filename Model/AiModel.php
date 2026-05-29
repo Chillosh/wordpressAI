@@ -30,7 +30,7 @@ class AiModel {
     }
 
     public function sendToGemini($prompt) {
-        $api_key = '67';
+        $api_key = 'YOUR_API_KEY_HERE';
         $url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=' . $api_key;
         
         $body = [

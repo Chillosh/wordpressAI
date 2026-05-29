@@ -16,3 +16,17 @@
     border: 1px solid #ccd0d4; 
     min-height: 100px;
 }
+
+nav {
+    background: #f1f1f1;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 15px;
+}
