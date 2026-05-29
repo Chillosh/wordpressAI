@@ -39,7 +39,6 @@ class DashboardController {
         $nav_html = file_get_contents(PLUGIN_DIR . 'View/html/nav.html');
         $html = str_replace('{{NAVIGATION}}', $nav_html, $html);
         
+        echo $html;
     }
-
-    
 }
